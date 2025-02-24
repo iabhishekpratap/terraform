@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terraform Static Website Deployment</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            backdrop-filter: blur(15px);
+        }
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .hero {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 60px 20px;
+            border-radius: 12px 12px 0 0;
+        }
+        .steps {
+            text-align: left;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 0 0 12px 12px;
+        }
+        .features {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        ol {
+            padding-left: 25px;
+            list-style: decimal inside;
+        }
+        .cta {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            padding: 15px 25px;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .cta:hover {
+            background: linear-gradient(to right, #feb47b, #ff7e5f);
+            transform: scale(1.1);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Deploy a Static Website with Terraform</h1>
+            <p>Learn how to automate website deployment using Terraform on AWS S3.</p>
+        </div>
+        
+        <div class="features">
+            <h2>Why Use Terraform?</h2>
+            <p>Terraform simplifies infrastructure deployment, allowing for scalability, consistency, and automation.</p>
+            <ul>
+                <li>Infrastructure as Code (IaC)</li>
+                <li>Automated Deployments</li>
+                <li>Scalability and Reliability</li>
+                <li>Cloud-Agnostic</li>
+            </ul>
+        </div>
+        
+        <div class="steps">
+            <h2>Deployment Steps</h2>
+            <ol>
+                <li>Write Terraform configuration files.</li>
+                <li>Initialize Terraform using <code>terraform init</code>.</li>
+                <li>Apply changes using <code>terraform apply</code>.</li>
+                <li>Upload your website files to the S3 bucket.</li>
+                <li>Configure the S3 bucket for static website hosting.</li>
+                <li>Access your deployed website via the public URL.</li>
+            </ol>
+        </div>
+        
+        <a href="#" class="cta">Get Started</a>
+    </div>
+</body>
+</html>
