@@ -9,3 +9,6 @@ ec2_map = {
     instance_type = "t2.micro"
   }
 }
+
+
+
